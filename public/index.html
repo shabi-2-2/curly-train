@@ -9,7 +9,7 @@
 <body> 
   <div class="container">
     <div class="form-box active" id="login-form">
-      <form action="">
+      <form action="/" method="get">
         <h2>Login</h2>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
@@ -19,7 +19,7 @@
     </div>
 
      <div class="form-box" id="register-form">
-      <form action="">
+      <form id="register-form-element" action="/register" method="post">
         <h2>Register</h2>
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
@@ -30,6 +30,7 @@
           <option value="admin">Admin</option>
         </select>
         <button type="submit" name="register">Register</button>
+        <p id="register-message" role="status" aria-live="polite"></p>
         <p>Already Have An account? <a href="#" onclick="showForm('login-form')">Login</a></p>
       </form>
     </div>

@@ -1,0 +1,18 @@
+{
+  "name": "curly-train",
+  "version": "1.0.0",
+  "description": "Local login and registration system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "mysql2": "^3.24.5"
+  }
+}
